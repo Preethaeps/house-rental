@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page - House Rental Platform</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            position: relative;
+            text-align: center;
+            padding: 50px;
+            background-color: #1d1160;
+            color: #fff;
+        }
+
+        main {
+            margin: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h1, h2 {
+            color: #1d1160;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #1d1160;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #140a3e;
+        }
+
+        .featured-listings {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .listing {
+            width: 30%;
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .listing:hover {
+            transform: scale(1.1);
+	    background-color: #1d1160;
+	    color: #fff;
+        }
+
+        .listing img {
+            width: 100%;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1d1160;
+            color: #fff;
+        }
+
+        .logo-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container img {
+            width: 30px;
+            margin-right: 5px;
+        }
+
+        .settings-logo {
+            width: 30px;
+            height: 30px;
+            background: url('settings-icon.png') center/cover no-repeat;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+
+        .heart-logo {
+            font-size: 24px; 
+            color: #fff; 
+        }
+
+        .settings-button {
+            background-color: #1d1160;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px; 
+            margin-right: 0; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: #fff;">Welcome to DreamDwell</h1>
+        <p style="font-size: 1.2em;">Find your dream home for rent!</p>
+        <div class="logo-container">
+            <span class="heart-logo">&#10084;</span>
+            <div class="settings-logo"></div>
+            <button class="settings-button">&#9881;</button>
+        </div>
+    </header>
+    <main>
+        <section>
+            <form>
+                <h2>Search for Your Perfect Home</h2>
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" placeholder="Enter location">
+                <label for="price-range">Price Range:</label>
+                <input type="number" id="price-range" name="price-range" placeholder="Enter max price">
+                <label for="bedrooms">Number of Bedrooms:</label>
+                <input type="number" id="bedrooms" name="bedrooms" placeholder="Enter number of bedrooms">
+                <label for="property-type">Property Type:</label>
+                <select id="property-type" name="property-type">
+                    <option value="apartment">Apartment</option>
+                    <option value="house">House</option>
+                    <option value="duplex">Duplex</option>
+                    <option value="town-house">Town-House</option>
+                    <option value="condo">Condo</option>
+                </select>
+                <button type="submit">Search Now</button>
+            </form>
+        </section>
+        <section>
+            <h2>Featured Listings</h2>
+            <div class="featured-listings">
+                <!-- Cozy Apartment -->
+                <div class="listing" onclick="window.location.href='apartment.html';">
+                    <img src="apartment.jpg" alt="Cozy Apartment">
+                    <h3>Cozy Apartment</h3>
+                    <p>Rs 6000/month</p>
+                    <p>This cozy apartment is perfect for those seeking comfort and tranquility. It features two bedrooms, a modern kitchen, and a welcoming living space.</p>
+                </div>
+                <!-- Spacious House -->
+                <div class="listing" onclick="window.location.href='house.html';">
+                    <img src="house.jpg" alt="Spacious House">
+                    <h3>Spacious House</h3>
+                    <p>Rs 9000/month</p>
+                    <p>Experience the spaciousness of this beautiful house with three bedrooms, a large backyard, and a peaceful environment.</p>
+                </div>
+                <!-- Modern Duplex -->
+                <div class="listing" onclick="window.location.href='duplex.html';">
+                    <img src="duplex.jpg" alt="Modern Duplex">
+                    <h3>Modern Duplex</h3>
+                    <p>Rs 12000/month</p>
+                    <p>Live in style with this modern duplex featuring four bedrooms, contemporary design, and convenient amenities.</p>
+                </div>
+                <!-- Charming Town House -->
+                <div class="listing" onclick="window.location.href='town house.html';">
+                    <img src="town house.jpg" alt="Charming Town-House">
+                    <h3>Charming Town-House</h3>
+                    <p>Rs 8000/month</p>
+                    <p>Embrace the charm of this townhouse with two bedrooms, a cozy atmosphere, and easy access to local amenities.</p>
+                </div>
+                <!-- Stylish Condo -->
+                <div class="listing" onclick="window.location.href='condo.html';">
+                    <img src="condo.jpg" alt="Stylish Condo">
+                    <h3>Stylish Condo</h3>
+                    <p>Rs 10000/month</p>
+                    <p>Live in style in this modern condo featuring one bedroom, sleek design, and a vibrant neighborhood.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p> &copy; 2023 DreamDwell. All rights reserved.</p>
+    </footer>
+</body>
+</html>

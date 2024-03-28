@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Apartment - DreamDwell</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; 
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px; 
+            background-color: #1d1160; 
+            color: #fff;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.5em; 
+            text-align: center; 
+            margin-left: 20px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container img {
+            width: 30px; 
+            margin-right: 5px; 
+        }
+
+        .logo-container h1 {
+            font-size: 1.5em; 
+        }
+
+        .settings-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .heart-logo {
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .settings-logo {
+            width: 30px; 
+            height: 30px; 
+            background: url('settings-icon.png') center/cover no-repeat;
+            border-radius: 50%;
+            margin-right: 5px; 
+        }
+
+        .settings-button {
+            background-color: #1d1160;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px;
+            margin-right: 0;
+        }
+
+        main {
+            margin: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #1d1160; 
+            text-align: center;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .listing {
+            width: 60%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .listing img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .listing-details {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .listing-info {
+            width: 60%;
+        }
+
+        .listing-features {
+            width: 35%;
+        }
+
+        .address-owner {
+            margin-top: 20px;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .button {
+            background-color: #1d1160;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1d1160; 
+            color: #fff;
+        }
+.video-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        iframe {
+            width: 70%;
+            height: 400px; 
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo-container">
+        <h1>&#9664;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DreamDwell</h1>
+    </div>
+    <div class="settings-container">
+        <span class="heart-logo">&#10084;</span>
+        <div class="settings-logo"></div>
+        <button class="settings-button">&#9881;</button>
+    </div>
+</header>
+<main>
+    <section>
+        <div class="listing">
+            <h2>Cozy Apartment</h2>
+            <img src="apartment.jpg" alt="Cozy Apartment">
+ <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/JvQ_WSl-jdk" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="listing-details">
+                <div class="listing-info">
+                    <p>Rs 6000/month</p>
+                    <p>This cozy apartment is perfect for those seeking comfort and tranquility. It features two bedrooms, a modern kitchen, and a welcoming living space.</p>
+                    <h3>Details:</h3>
+                    <ul>
+                        <li>Number of Bedrooms: 2</li>
+                        <li>Number of Bathrooms: 1</li>
+                        <li>Measurements:</li>
+                        <ul>
+                            <li>Bedroom 1: 15x12 sq ft</li>
+                            <li>Bedroom 2: 12x10 sq ft</li>
+                            <li>Kitchen: 10x8 sq ft</li>
+                            <li>Living Room: 18x15 sq ft</li>
+                            <li>Bathroom: 8x6 sq ft</li>
+                        </ul>
+                        <li>Furnitures: Fully furnished</li>
+                        <li>Additional Features: Balcony, Parking space</li>
+                    </ul>
+                </div>
+                <div class="listing-features">
+                    <h3>Property Features:</h3>
+                    <ul>
+                        <li>Modern design</li>
+                        <li>Central heating and cooling</li>
+                        <li>Hardwood floors</li>
+                        <li>Laundry facilities</li>
+                        <li>Security system</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="address-owner">
+                <h3>Contact Information:</h3>
+                <p>Address: 123 Dream Street, Cityville, Dreamland</p>
+                <p>Owner: John Doe</p>
+                <p>Contact No: +91 1234567890</p>
+                <p>Email: john.doe@example.com</p>
+            </div>
+        </div>
+    </section>
+</main>
+<div class="button-container">
+    <button class="button">Rent</button>
+    <button class="button">Add to Favorites</button>
+    <p> </p>
+</div>
+<div class="footer">
+    <p> &copy; 2023 DreamDwell. All rights reserved.</p>
+</div>
+</body>
+</html>
